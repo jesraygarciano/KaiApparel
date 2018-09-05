@@ -1,0 +1,65 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+
+body{
+  .main-header{
+    height: 150px;
+    background-color: #000000;
+    border: 1px solid;
+    text-align: center;
+    .left-nav{
+      border: 1px solid;
+      background-color: #000000;
+      #ul-nav{
+        font-family: "Segoe UI";
+        display: inline;
+        list-style: none;
+        #logo{
+          display: inline;
+          height:120px;
+          vertical-align: middle;
+          padding-left:35px;
+        }
+        li{
+          font-size: 20px;
+          display: inline;
+          color: #ffffff;
+          padding: 20px;
+          margin-left: 0px;
+          a{
+            text-decoration:none;
+            color: #ffffff;
+          }
+           a.nav-link:hover{
+            opacity:0.5;
+          }
+      }
+    }
+   }
+  }
+}
+
+//1300(scenario),979,767,480
+
+@media only screen and (max-width:1300px) {
+  body{background-color: pink;}
+}
+
+@media only screen and (max-width:979px) {
+  body{background-color: red;}
+
+}
+
+@media only screen and (max-width:767px) {
+  body{background-color: blue;}
+
+}
+
+@media only screen and (max-width:480px) {
+  body{background-color: green;}
+
+}
